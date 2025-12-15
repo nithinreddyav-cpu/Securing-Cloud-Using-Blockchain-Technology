@@ -1,5 +1,3 @@
-## 📋 wtf is this
-
 DataBlock is a **blockchain-based encrypted file storage system** that demonstrates real blockchain principles including proof-of-work mining, cryptographic hashing, and chain validation. Files are encrypted using AES-256, stored in AWS S3 (or locally), while encryption keys and metadata are stored in a blockchain for security and immutability.
 
 When presenting to teacher, just say its real shit not just simulation
