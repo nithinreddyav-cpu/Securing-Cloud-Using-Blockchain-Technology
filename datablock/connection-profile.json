@@ -1,0 +1,62 @@
+{
+    "name": "aws-managed-blockchain",
+    "version": "1.0.0",
+    "client": {
+        "organization": "m-M7YJTRNXBNEAXKQTCBY3JS6UJY",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                },
+                "orderer": "300"
+            }
+        }
+    },
+    "channels": {
+        "Hikairi": {
+            "peers": {
+                "nd-PZPCBQQKOZAGPB457EMZFX7B2Q": {
+                    "endorsingPeer": true,
+                    "chaincodeQuery": true,
+                    "ledgerQuery": true,
+                    "eventSource": true
+                }
+            }
+        }
+    },
+    "organizations": {
+        "m-M7YJTRNXBNEAXKQTCBY3JS6UJY": {
+            "mspid": "m-M7YJTRNXBNEAXKQTCBY3JS6UJY",
+            "peers": [
+                "nd-PZPCBQQKOZAGPB457EMZFX7B2Q"
+            ],
+            "certificateAuthorities": [
+                "ca-org1"
+            ]
+        }
+    },
+    "peers": {
+        "nd-PZPCBQQKOZAGPB457EMZFX7B2Q": {
+            "url": "grpcs://nd-pzpcbqqkozagpb457emzfx7b2q.m-m7yjtrnxbneaxkqtcby3js6ujy.n-jfaefobvazhvlmm22tsalx5fxa.managedblockchain.ap-southeast-1.amazonaws.com:30003",
+            "tlsCACerts": {
+                "path": "./credentials/peer-tls-ca.pem"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "nd-PZPCBQQKOZAGPB457EMZFX7B2Q",
+                "request-timeout": 120001
+            }
+        }
+    },
+    "orderers": {
+        "orderer": {
+            "url": "grpcs://orderer.n-jfaefobvazhvlmm22tsalx5fxa.managedblockchain.ap-southeast-1.amazonaws.com:30001",
+            "tlsCACerts": {
+                "path": "./credentials/orderer-tls-ca.pem"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "orderer",
+                "request-timeout": 120001
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Tabs</title>
+    <style>
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 2px solid red;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="switchTab('encrypt')">Encrypt</button>
+    <button onclick="switchTab('decrypt')">Decrypt</button>
+
+    <div id="encrypt-tab" class="tab-content active">
+        <h1>ENCRYPT TAB</h1>
+        <p>This is the encrypt tab content</p>
+    </div>
+
+    <div id="decrypt-tab" class="tab-content">
+        <h1>DECRYPT TAB</h1>
+        <p>This is the decrypt tab content</p>
+        <input type="text" placeholder="Enter hash">
+        <button>Decrypt</button>
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            console.log('Switching to:', tabName);
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                console.log('Removing active from:', content.id);
+                content.classList.remove('active');
+            });
+            const targetTab = document.getElementById(`${tabName}-tab`);
+            console.log('Adding active to:', targetTab);
+            targetTab.classList.add('active');
+        }
+    </script>
+</body>
+</html>

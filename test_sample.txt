@@ -1,0 +1,13 @@
+This is a test file for DataBlock encryption.
+
+Project: Secure File Storage System
+Technology: Blockchain + AES-256 Encryption
+Author: Akane
+
+Test data:
+- Sample text content
+- Multiple lines
+- UTF-8 encoding
+- Ready for encryption!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.

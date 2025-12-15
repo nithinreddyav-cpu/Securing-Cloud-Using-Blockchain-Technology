@@ -1,0 +1,8 @@
+flask
+flask-login
+boto3
+python-dotenv
+cryptography
+web3
+py-solc-x
+requests

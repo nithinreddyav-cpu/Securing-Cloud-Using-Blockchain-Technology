@@ -1,0 +1,16 @@
+{
+  "project": "DataBlock",
+  "version": "1.0.0",
+  "description": "Blockchain-backed secure file storage",
+  "features": [
+    "AES-256 encryption",
+    "SHA-256 hashing",
+    "Ethereum blockchain integration",
+    "AWS S3 storage"
+  ],
+  "testData": {
+    "timestamp": "2025-10-17",
+    "status": "testing",
+    "encrypted": false
+  }
+}

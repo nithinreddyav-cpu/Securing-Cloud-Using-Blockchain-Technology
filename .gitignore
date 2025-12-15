@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# dotenv
+.env
+
+# SQLite DB
+datablock/datablock.db
+*.db
+
+# Secrets and keys
+datablock/keys/
+datablock/*.pem
+
+# Uploads and large generated files — keep local only
+datablock/uploads/
+datablock/encrypted/
+datablock/decrypted/
+datablock/hashes/
+datablock/upload_history.json
+datablock/blockchain_storage.json
+
+# Python egg/wheel
+dist/
+build/
+*.egg-info/
+
+# Node (if present)
+node_modules/

@@ -1,0 +1,20 @@
+# Ignore sensitive and generated files
+# Encrypted artifacts
+encrypted/
+# Hash files
+hashes/
+# Key material
+keys/
+# Uploaded files (working uploads)
+uploads/
+# Upload history metadata
+upload_history.json
+
+# If you ever want to keep directory structure but ignore files inside, use:
+# encrypted/*
+# hashes/*
+# keys/*
+# uploads/*
+.env/
+#sensitive local environment variables
+# Local configuration files
